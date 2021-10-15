@@ -56,12 +56,7 @@ body{
     align-items: center;    
 }
 
-.boton-menu:hover,.iconos:hover{
-    background: var(--amarillo);
-    border-radius: 10px;
-    color: var(--gris);
-    transform: scale(1.4);
-}
+
 
 .iconos:hover{
     transform: rotate(0.1turn);
@@ -130,6 +125,15 @@ body{
         
     }
 
+@media (max-width: 400px){
+    footer{
+        font-size: 70%;
+    }
+    .botones-footer{
+        font-size: 70%;
+    }
+}
+
     .botones{
         display: flex;
         justify-content: space-between;
@@ -147,6 +151,7 @@ body{
 .novedades img{
     width: 100%;
     padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 section{
@@ -155,9 +160,48 @@ section{
 }
 
 footer{
+    
+    background-image: url(imagenes/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 1%;
+    padding-bottom: 20px;
+    
+}
+
+h2{
+    font-size: 100%;
+}
+
+.pieses{
+    color: red;
+    font-weight: bold;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background-image: url(imagenes/contacto.webp);
+    padding: 1%;
+    background-color: none;
     display: flex;
     justify-content: space-around;
+}
+
+.pie button{
+    font-weight: bold;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.suscripcion{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.boton-menu:hover,.iconos:hover, .botones-footer:hover{
+    background: red;
+    border-radius: 10px;
+    color: white;
+    transform: scale(1.2);
 }
