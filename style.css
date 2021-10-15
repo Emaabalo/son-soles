@@ -144,12 +144,20 @@ body{
     }      
 }
 
+.novedades img{
+    width: 100%;
+    padding-top: 1%;
+}
+
 section{
     display: flex;
     grid-template-columns: auto;
 }
 
 footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-image: url(imagenes/contacto.webp);
     display: flex;
-    gap: 20%;
+    justify-content: space-around;
 }
