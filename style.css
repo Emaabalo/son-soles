@@ -8,12 +8,13 @@
 
 :root{
     --amarillo: rgb(253, 241, 74);
-    --crema: rgb(243, 231, 215);
+    --crema: rgb(206, 235, 230);
     --gris: grey;
 }
 
 body{
     background-color: var(--crema);
+    /* background-color: lightcoral; */
 }
 
 .menu{
@@ -28,7 +29,7 @@ body{
     display: flex;
     justify-content: start;
     width: 75%;
-    background-color:rgb(243, 231, 215);
+    background-color: var(--crema);
 }
 
 .cabecera img{
@@ -56,12 +57,6 @@ body{
     align-items: center;    
 }
 
-
-
-.iconos:hover{
-    transform: rotate(0.1turn);
-}
-
 .enlases{
     width: 80%;
     display: flex;
@@ -75,10 +70,12 @@ body{
 }
 
 .imagenes{
-    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-
-.img{
+.imagenes img{
     width: 100%;
 }
 
@@ -148,10 +145,12 @@ body{
     }      
 }
 
+.novedades{
+    padding-left: 1%;
+    padding-right: 1%;
+}
 .novedades img{
     width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
 }
 
 section{
@@ -160,13 +159,10 @@ section{
 }
 
 footer{
+    padding-left: 1%;
+    padding-right: 1%;
     
-    background-image: url(imagenes/contact.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-top: 1%;
-    padding-bottom: 20px;
-    
+
 }
 
 h2{
@@ -174,17 +170,23 @@ h2{
 }
 
 .pieses{
+    background-image: url(imagenes/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
     color: red;
     font-weight: bold;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding: 1%;
     background-color: none;
     display: flex;
     justify-content: space-around;
 }
 
-.pie button{
+.pie a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
     font-weight: bold;
     border: none;
     background: none;
@@ -199,9 +201,13 @@ h2{
 }
 
 
-.boton-menu:hover,.iconos:hover, .botones-footer:hover{
-    background: red;
+.boton-menu:hover,.iconos:hover, .pie a:hover, .botones-footer:hover{
+    background: white;
     border-radius: 10px;
-    color: white;
+    color: red;
     transform: scale(1.2);
+}
+
+.iconos-ubicacion img:hover{
+    transform: rotate(0.1turn);
 }
