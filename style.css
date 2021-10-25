@@ -150,6 +150,7 @@ body{
     padding-right: 1%;
 }
 .novedades img{
+    border: 2px solid red;
     width: 100%;
 }
 
@@ -161,19 +162,20 @@ section{
 footer{
     padding-left: 1%;
     padding-right: 1%;
-    
-
 }
 
 h2{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
+    font-weight: bold;
+    color: black;
 }
 
 .pieses{
-    background-image: url(imagenes/contact.jpg);
+    background-image: url(imagenes/globoContacto.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 5%;
+    padding: 3%;
     color: red;
     font-weight: bold;
     display: grid;
@@ -195,10 +197,22 @@ h2{
 }
 
 .suscripcion{
-    padding: 1%;
-    display: flex;
-    justify-content: center;
+    /* padding: 1%; */
+    color: black;
+    font-weight: bold;
 }
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+/* .entrada{
+    display: flex;
+    justify-content: space-between;
+} */
 
 
 .boton-menu:hover,.iconos:hover, .pie a:hover, .botones-footer:hover{
