@@ -14,7 +14,7 @@
 
 body{
     background-color: var(--crema);
-    /* background-color: lightcoral; */
+    font-family: cursive;
 }
 
 .menu{
@@ -42,19 +42,92 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;    
+    font-size: 150%;
 }
 
 .boton-menu{
+    text-decoration: none;
+    color: black;
     background: none;
-    border: none;
+    border: 2px solid green;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     cursor: pointer;
     border: none;
     width: 100%;
     display: flex;
+    /* justify-content: center; */
+    /* align-items: center;     */
+}
+
+.navegador {
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+    border: 2px solid red;   
+}
+
+.submenu-beba{
+    display: none;
+    background-color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+.submenu-bebe{
+    display: none;
+    background-color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}.submenu-nino{
+    display: none;
+    background-color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}.submenu-nina{
+    display: none;
+    background-color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+.detalle a{
+    text-decoration: none;
+
+}
+
+.navegador-beba:hover >.submenu-beba{
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 28%;
+}
+.navegador-bebe:hover >.submenu-bebe{
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 39%;
+}
+.navegador-nino:hover >.submenu-nino{
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 51%;
+}
+.navegador-nina:hover >.submenu-nina{
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 63%;
 }
 
 .enlases{
@@ -72,9 +145,27 @@ body{
 .imagenes{
     padding-left: 1%;
     padding-right: 1%;
-    display: grid;
+    padding-bottom: 1%;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px; */
 }
+.imagenes ul{
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1%;
+    animation: slider 10s infinite alternate;
+}
+
+@keyframes slider{
+    0%{margin-left: 0;}
+    45%{margin-left: 0;}
+
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+}
+
 .imagenes img{
     width: 100%;
 }
@@ -146,6 +237,7 @@ body{
 }
 
 .novedades{
+    padding-bottom: 1%;
     padding-left: 1%;
     padding-right: 1%;
 }
@@ -172,7 +264,7 @@ h2{
 }
 
 .pieses{
-    background-image: url(imagenes/globoContacto.png);
+    background-image: url(imagenes/niña-detras.png);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 3%;
@@ -183,6 +275,18 @@ h2{
     background-color: none;
     display: flex;
     justify-content: space-around;
+}
+
+/* .pie{
+    background-color: white;
+    border-radius: 100%;
+    padding: 2%;
+} */
+
+.suscripcion{
+    /* padding: 1%; */
+    color: black;
+    font-weight: bold;
 }
 
 .pie a{
@@ -196,11 +300,6 @@ h2{
     flex-direction: column;
 }
 
-.suscripcion{
-    /* padding: 1%; */
-    color: black;
-    font-weight: bold;
-}
 
 .formulario{
     display: grid;
@@ -225,3 +324,4 @@ h2{
 .iconos-ubicacion img:hover{
     transform: rotate(0.1turn);
 }
+

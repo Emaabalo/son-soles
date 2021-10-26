@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(206, 235, 230);
+    text-align: center;
+}
+
+.usuario{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.enviar-borrar{
+    padding: 10px;
+}
+
+.login{
+    border: 5px solid rgb(253, 241, 74);
+}
+
+.nuevo-usuario{
+    background-color: white;
+    border: 5px solid rgb(253, 241, 74);
+
+}
+
+.nuevo-usuario button{
+    text-decoration: none;
+}
+
