@@ -17,6 +17,10 @@ body{
     font-family: cursive;
 }
 
+
+/* ###################################################### */
+/* CABECERA */
+
 .menu{
     border-bottom: 2px solid var(--gris);
     margin-bottom: 10px;
@@ -51,13 +55,10 @@ body{
     background: none;
     border: 2px solid green;
     font-weight: bold;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     cursor: pointer;
     border: none;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center;     */
 }
 
 .navegador {
@@ -83,7 +84,8 @@ body{
     text-align: center;
     padding: 0;
     list-style: none;
-}.submenu-nino{
+}
+.submenu-nino{
     display: none;
     background-color: white;
     font-weight: bold;
@@ -91,7 +93,8 @@ body{
     text-align: center;
     padding: 0;
     list-style: none;
-}.submenu-nina{
+}
+.submenu-nina{
     display: none;
     background-color: white;
     font-weight: bold;
@@ -102,7 +105,6 @@ body{
 }
 .detalle a{
     text-decoration: none;
-
 }
 
 .navegador-beba:hover >.submenu-beba{
@@ -130,6 +132,7 @@ body{
     left: 63%;
 }
 
+
 .enlases{
     width: 80%;
     display: flex;
@@ -142,14 +145,15 @@ body{
     padding: 3px;
 }
 
+/* ############################################################### */
+/* SLIDER DE IMAGENES */
+
 .imagenes{
     padding-left: 1%;
     padding-right: 1%;
     padding-bottom: 1%;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px; */
 }
+
 .imagenes ul{
     width: 200%;
     display: grid;
@@ -170,10 +174,97 @@ body{
     width: 100%;
 }
 
+
+
+/* ############################################################### */
+/* BOTON CELU */
+
+
 .escondido{
     display: none;
 }
 
+
+
+/* ################################################### */
+/* NOVEDADES */
+
+
+.novedades{
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.novedades img{
+    border: 2px solid red;
+    width: 100%;
+}
+
+
+/* ################################################## */
+/* PIE DE PAGINA */
+
+footer{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+footer h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+.pieses{
+    background-image: url(imagenes/niña-detras.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 3%;
+    color: red;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.suscripcion{
+    color: black;
+    font-weight: bold;
+}
+
+.pie a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.boton-menu:hover,.iconos:hover, .pie a:hover, .botones-footer:hover{
+    background: white;
+    border-radius: 10px;
+    color: red;
+    transform: scale(1.2);
+}
+
+.iconos-ubicacion img:hover{
+    transform: rotate(0.1turn);
+}
+
+/* ######################################################### */
+/* MEDIAS */
 
 @media (max-width: 750px){    
     .botones{
@@ -235,93 +326,3 @@ body{
         align-items: center;
     }      
 }
-
-.novedades{
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-.novedades img{
-    border: 2px solid red;
-    width: 100%;
-}
-
-section{
-    display: flex;
-    grid-template-columns: auto;
-}
-
-footer{
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    font-weight: bold;
-    color: black;
-}
-
-.pieses{
-    background-image: url(imagenes/niña-detras.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 3%;
-    color: red;
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    background-color: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-/* .pie{
-    background-color: white;
-    border-radius: 100%;
-    padding: 2%;
-} */
-
-.suscripcion{
-    /* padding: 1%; */
-    color: black;
-    font-weight: bold;
-}
-
-.pie a{
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    background: none;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.formulario{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
-
-
-/* .entrada{
-    display: flex;
-    justify-content: space-between;
-} */
-
-
-.boton-menu:hover,.iconos:hover, .pie a:hover, .botones-footer:hover{
-    background: white;
-    border-radius: 10px;
-    color: red;
-    transform: scale(1.2);
-}
-
-.iconos-ubicacion img:hover{
-    transform: rotate(0.1turn);
-}
-
