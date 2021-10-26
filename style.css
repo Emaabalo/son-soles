@@ -160,6 +160,7 @@ body{
     grid-template-columns: repeat(4,1fr);
     gap: 1%;
     animation: slider 10s infinite alternate;
+    list-style: none;
 }
 
 @keyframes slider{
